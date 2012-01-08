@@ -1,11 +1,12 @@
 /* Update button */
 .update { 
-	padding:8px 5px 8px 6px;
+	padding:8px 0px 4px 0px;
 	float: right; 
 	position: fixed; 
 	top: 220px; 
 	right: 0; 
 	z-index: 100;
+    width:32px;
 	text-align: center;
 	border-top: 1px solid #dadada;
 	border-bottom: 1px solid #dadada;
@@ -13,7 +14,7 @@
 	_position: absolute;
 	_top: expression( eval(document.documentElement.scrollTop) + 220 +"px" ); 
 }
-.update .update-comments { width: 20px; height: 20px; cursor: pointer; background: url(../images/update.gif) no-repeat; }
+.update .update-comments { width: 32px; height: 32px; cursor: pointer; background: url(../images/update.gif) no-repeat; }
 .update .update-comments.active { background: url(../images/update_act.gif) no-repeat; }
 .update .new-comments { color: #3cc600; padding-top: 7px; margin-top: 3px; cursor: pointer; }
 
