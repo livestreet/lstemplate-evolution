@@ -1,0 +1,233 @@
+/* Blocks
+-------------------- */
+#container 	{ margin: 0 auto; width:1000px; min-height:100% }
+#header 	{ height: 85px; overflow: hidden; zoom: 1 }
+#wrapper 	{ overflow: hidden; zoom: 1; clear:both; margin:28px 0px 35px 0px }
+#content 	{ width: 660px; float: left; }
+#sidebar	{ width: 280px; float: right; }
+#footer 	{ overflow: hidden; zoom: 1; border-top:2px solid #303030; height:90px; margin-top:-92px }
+
+/* Header
+-------------------- */
+#header a.logo { margin-top:32px; text-decoration:none; float:left; display:block; width:106px; height:20px; background:url(../images/logo.png) no-repeat }
+
+#header .pages { overflow: hidden; zoom: 1; float:left; margin-left:70px; font-size:15px }
+#header .pages li { float: left; margin-right: 20px; position: relative; line-height:87px; height:85px }
+#header .pages li a { color: #e9e9e9; text-decoration: none }
+#header .pages li.active { line-height:83px; background:url(../images/strelka-pages.png) no-repeat bottom center }
+#header .pages li.active a { color: #FFFFFF; font-size: 20px; text-decoration: none; }
+
+#header .profile { float:right; overflow:hidden }
+#header .profile .avatar { margin-top:18px; float:right; width: 48px; height: 48px;}
+#header .profile ul { margin:18px 16px 0px 0px; float:right; text-align:right; }
+#header .profile li { font-size:13px; margin-bottom:8px; color:#fff }
+#header .profile li a { color:#fff; text-decoration:none;  }
+#header .profile li .username { color:#fefefe }
+#header .profile li .userrating.plus { color:#77d115 }
+#header .profile li .userrating.minus { color:#ef2125 }
+#header .profile .my { background: url(../images/my-icon.png) no-repeat; margin-right: 16px; display:block; width:18px; height:18px; zoom: 1; text-decoration: none;float:right;  }
+#header .profile .message { background: url(../images/message-icon.png) no-repeat; margin-right: 18px; margin-top:3px; display:block; width:20px; height:13px; zoom: 1; text-decoration: none; float:right;  }
+#header .profile .new-message { background: url(../images/message-icon.png) no-repeat right; margin-right: 18px; margin-top:3px; display:block; line-height:12px; height:13px; zoom: 1; text-decoration: none; float:right; padding-right:28px; color:#77d115 }
+#header .profile .settings { background: url(../images/settings-icon.png) no-repeat; display:block; width:16px; height:18px; zoom: 1; text-decoration: none; float:right; }
+#header .profile a:hover { color: #ddd; }
+
+#header .auth { padding-top:32px; float:right; overflow:hidden }
+#header .auth a { float:right; display:block; margin-left:8px; text-decoration:none }
+#header .auth .reg { width:118px; height:25px; background:url(../images/reg-button.png) no-repeat; display:block; }
+#header .auth .reg:hover { background-position:0px -25px }
+#header .auth .login { width:75px; height:25px; background:url(../images/join-button.png) no-repeat; display:block; }
+#header .auth .login:hover { background-position:0px -25px }
+
+/* Navigation
+-------------------- */
+#nav { clear:both; overflow:hidden }
+
+/* Menu */
+#nav .menu { padding-bottom: 30px; float: left; font-size: 15px; }
+#nav .menu li { float: left; color: #5aac00; text-shadow:0px 1px 0px #f9f9f9; height:35px; line-height:35px; padding:0px 12px; position: relative; }
+#nav .menu li a { text-decoration: none; color: #2e2e2e; }
+#nav .menu li a.new { color:#5aac00 }
+#nav .menu li.active { position: relative; background: #fff }
+#nav .menu li.active a { color: #333; }
+#nav .menu li.active a.new { color: #5aac00 }
+
+/* Sub-menu */
+#nav .sub-menu { position: absolute; top: 35px; left: 0; margin-left:10px; width: 500px; font-size: 13px; }
+#nav .sub-menu li { margin-right: 10px; padding: 0px !important; color:#5aac00 }
+#nav .sub-menu li a { color: #5aac00 !important; padding:0px 4px 2px 4px; text-decoration: underline; }
+#nav .sub-menu li a:hover { text-decoration: none !important; }
+#nav .sub-menu li.active a { background:#f3f1de; color: #777 !important; text-decoration: none; }
+
+/* Search */
+#nav .search { float:right; width:200px; height:35px; background:url(../images/bg-search.gif) repeat-x; }
+#nav .search .text { width:160px; background:none; border:0px; height:35px; line-height:34px; color:#8f8f8f }
+#nav .search .search-icon { display:block; float:left; margin:12px 8px 0px 10px }
+
+/* Search */
+#nav .button-publish { float: left; font-size:15px; text-decoration: none; background: #5aac00; color: #fff; line-height:35px; text-align:center; margin-right: 60px; width:110px; height:35px }
+#nav .button-publish span { padding-right:24px; background:url(../images/pen-icon.png) no-repeat right }
+
+
+/* Misc blocks
+-------------------- */
+
+/* Blog profile */
+.blog { padding: 20px 0px 0; margin-bottom: 20px; color: #666; position: relative; }
+
+.blog .voting { position: absolute; top: 20px; right: 0px; z-index: 100; }
+.blog .voting .total { float: left; height:25px; font-size:14px; line-height:25px; padding:0px 7px }
+.blog .voting .total a { text-decoration: none; color: #fff; outline: none; text-shadow:1px 0px 0px #468600 !important }
+
+.blog .voting.positive .total { background:#5aac00; color:#fff }
+.blog .voting.negative .total { background:#f20202; color:#fff }
+
+.blog .voting .bg-plus { background:#e2e2e2; width:21px; display:block; padding-left:6px; padding-top:1px; height:24px; float:left }
+.blog .voting .bg-minus { background:#e2e2e2; width:19px; display:block; padding-left:4px; padding-top:1px; height:24px; float:left }
+
+.blog .voting .plus,
+.blog .voting .minus 			{ width: 15px; height: 15px; display: block; background: url(../images/topic-voting.png) no-repeat; text-shadow:0px 1px 0px #fff; position: relative; outline: none; }
+.blog .voting .plus 			{ background-position: 0 0; }
+.blog .voting .minus 			{ background-position: -15px 0px }
+.blog .voting .plus:hover 	    { background-position: 0px -15px }
+.blog .voting .minus:hover 	{ background-position: -15px -15px }
+
+.blog .voting .text2 { color:#999; padding-left:16px; padding-top:2px; clear:both }
+
+.blog .voting.voted.plus 	.plus 			{ background-position: 0px -15px !important }
+.blog .voting.voted.minus .minus 			{ background-position: -15px -15px !important }
+.blog .voting.voted.plus 	.minus:hover 	{ background-position: -15px 0px }
+.blog .voting.voted.minus .plus:hover 	{ background-position: 0 0; }
+
+.blog .voting.guest .plus:hover 	{ background-position: 0 0; }
+.blog .voting.guest .minus:hover 	{ background-position: -15px 0px }
+
+.blog .blog-header { overflow: hidden; zoom: 1; position: relative; padding: 0 100px 0 30px; }
+.blog .blog-header img { position: absolute; top: 0; left: 0; }
+.blog .blog-header h2 { font-size: 24px; line-height: 1.3em; margin-top: -4px; }
+.blog .blog-header h2 a { text-decoration: none; border-bottom: 1px dashed #70AAE0; }
+.blog .blog-header h2.inactive a { color: #ccc; border-color: #ccc; }
+
+.blog .actions { margin-bottom: 10px; margin-left:30px; }
+.blog .actions .join2 { margin-top:4px; margin-left:5px; }
+
+.blog .blog-info { display: none; background: #F4F4F6; padding: 25px 30px; border-radius: 10px; }
+.blog .blog-info h3 { font-size: 22px; color: #555; font-family: Verdana, sans-serif; }
+.blog .blog-info p { border-bottom: 1px solid #DADADA; padding-bottom: 15px; margin-bottom: 0; }
+.blog .blog-info .user { margin-right: 5px; }
+
+.blog .blog-wrapper { overflow: hidden; zoom: 1; margin-bottom: 40px; border-top: 1px solid #fff; padding: 20px 0 0; }
+.blog .blog-wrapper .blog-admins { float: left; width: 50%; }
+.blog .blog-wrapper .blog-mods { float: left; width: 50%; }
+.blog .blog-wrapper .user-list li { float: left; width: 60px;text-align: center; overflow: hidden; }
+.blog .blog-wrapper .user-list li img { display: block; margin: 0 auto 2px; }
+
+.blog-list-table { }
+.blog-list-table tbody { color: #999; }
+.blog-list-table td .avatar { float: left; position: relative; top: 2px; }
+.blog-list-table td .title { font-size: 18px; line-height: 22px; }
+.blog-list-table td .user { font-weight: bold; color: #999; background: url(../images/icons.gif) 0 -108px no-repeat; }
+.blog-list-table td .private { position: relative; top: 2px; }
+.blog-list-table td p { margin-bottom: 0; color: #999; }
+
+/* User profile */
+.user-profile { margin-bottom: 20px; overflow: hidden; zoom: 1; position: relative; }
+.user-profile .avatar { float:left; margin-right:20px }
+.user-profile .about-profile { float:right; width:540px }
+.user-profile .about-profile .top-profile { margin-bottom:12px; margin-top:-6px; overflow:hidden; }
+.user-profile .about-profile .top-profile h3 { font-size:24px; color:#9c9c9c; margin-bottom:0px }
+.user-profile .about-profile .top-profile h3 span { color:#222 }
+
+.user-profile .about-profile .btm-profile { clear:both; overflow:hidden }
+.user-profile .about-profile .btm-profile .rating { float:left; overflow:hidden }
+.user-profile .about-profile .btm-profile .rating .voting { float: left; margin-right:30px; overflow:hidden }
+.user-profile .about-profile .btm-profile .rating .voting .total { float: left; height:25px; font-size:14px; line-height:25px; padding:0px 7px }
+.user-profile .about-profile .btm-profile .rating .voting .total a { text-decoration: none; color: #fff; outline: none; text-shadow:1px 0px 0px #468600 !important }
+
+.user-profile .about-profile .btm-profile .rating .voting .text { color:#999; padding-left:30px; margin-bottom:5px }
+.user-profile .about-profile .btm-profile .rating .voting .text2 { color:#999; padding-left:24px; margin-top:2px; clear:both }
+
+.user-profile .about-profile .btm-profile .rating .voting.positive .total { background:#5aac00; color:#fff }
+.user-profile .about-profile .btm-profile .rating .voting.negative .total { background:#f20202; color:#fff }
+
+.user-profile .about-profile .btm-profile .rating .voting .bg-plus { background:#e2e2e2; width:21px; display:block; padding-left:6px; padding-top:1px; height:24px; float:left }
+.user-profile .about-profile .btm-profile .rating .voting .bg-minus { background:#e2e2e2; width:19px; display:block; padding-left:4px; padding-top:1px; height:24px; float:left }
+
+.user-profile .about-profile .btm-profile .rating .voting .plus,
+.user-profile .about-profile .btm-profile .rating .voting .minus 			{ width: 15px; height: 15px; display: block; background: url(../images/topic-voting.png) no-repeat; text-shadow:0px 1px 0px #fff; position: relative; outline: none; }
+.user-profile .about-profile .btm-profile .rating .voting .plus 			{ background-position: 0 0; }
+.user-profile .about-profile .btm-profile .rating .voting .minus 			{ background-position: -15px 0px }
+.user-profile .about-profile .btm-profile .rating .voting .plus:hover 	    { background-position: 0px -15px }
+.user-profile .about-profile .btm-profile .rating .voting .minus:hover 	{ background-position: -15px -15px }
+
+.user-profile .about-profile .btm-profile .rating .voting.voted.plus 	.plus 			{ background-position: 0px -15px !important }
+.user-profile .about-profile .btm-profile .rating .voting.voted.minus .minus 			{ background-position: -15px -15px !important }
+.user-profile .about-profile .btm-profile .rating .voting.voted.plus 	.minus:hover 	{ background-position: -15px 0px }
+.user-profile .about-profile .btm-profile .rating .voting.voted.minus .plus:hover 	{ background-position: 0 0; }
+
+.user-profile .about-profile .btm-profile .rating .voting.guest .plus:hover 	{ background-position: 0 0; }
+.user-profile .about-profile .btm-profile .rating .voting.guest .minus:hover 	{ background-position: -15px 0px }
+
+.user-profile .about-profile .btm-profile .rating .strength { float:right }
+.user-profile .about-profile .btm-profile .rating .strength .text { color:#999; padding-left:8px; margin-bottom:5px }
+.user-profile .about-profile .btm-profile .rating .strength .total { background:#5294ce; line-height:25px; font-size:14px; padding:0px 8px; height:25px; text-align:center; color: #fff; outline: none; text-shadow:1px 0px 0px #468600 !important }
+
+.user-profile .about-profile .btm-profile .info { float:right; color:#222; font-size:11px; line-height:12px }
+.user-profile .about-profile .btm-profile .info b { color:#9c9c9c; font-weight:normal }
+
+.user-profile .about-profile .btm-profile .friend { float:right; margin-left:30px }
+.user-profile .about-profile .btm-profile .friend .add-friend { width:158px; height:24px; background:url(../images/friend-button.png) no-repeat; display:block }
+.user-profile .about-profile .btm-profile .friend .add-friend:hover { background-position:0px -24px; }
+.user-profile .about-profile .btm-profile .friend .delete-friend { width:158px; height:24px; background:url(../images/friend-button.png) no-repeat 0px -48px; display:block }
+.user-profile .about-profile .btm-profile .friend .delete-friend:hover { background-position:0px -72px; }
+.user-profile .about-profile .btm-profile .friend .reject-friend { width:158px; height:24px; background:url(../images/friend-button.png) no-repeat 0px -120px; display:block }
+.user-profile .about-profile .btm-profile .friend .send-friend { width:158px; height:24px; background:url(../images/friend-button.png) no-repeat 0px -96px; display:block }
+
+.user-profile .about-profile .btm-profile .friend .send-message { margin-top:14px; width:158px; height:24px; background:url(../images/send-message.png) no-repeat; display:block }
+.user-profile .about-profile .btm-profile .friend .send-message:hover { background-position:0px -24px; }
+
+.user-profile-table { width: 100%; }
+.user-profile-table td { vertical-align: top; padding: 0 0 8px; }
+.user-profile-table td.var { width: 150px; color: #9c9c9c; }
+.user-profile-table td .user { margin-right: 7px; }
+
+/* Stat */
+.stat-performance { padding: 15px 20px; background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.stat-performance table { }
+.stat-performance table td { width: 200px; vertical-align: top; }
+.stat-performance h4 { font-weight: bold; }
+
+/* Userfeed */
+.userfeed-get-more { display:block; width: 90%; margin: 0px auto; text-align: center; height: 2.5em; padding-top: 1em;}
+.userfeed-get-more:hover { background: #f0f7fd;}
+.userfeed_loading {background: #F7F7F7 url(../images/loader.gif) no-repeat center;}
+
+/* Stream */
+.stream-get-more { display: block; text-align: center; padding: 12px 0; background: #fafafa; color: #aaa; border-top: 1px solid #eee; text-decoration: none; }
+.stream-get-more:hover { background: #f0f7fd; }
+.stream_loading { background: #f7f7f7 url(../images/loader.gif) no-repeat center; }
+.stream-comment-preview { padding: 5px 10px; background: #f3f3f3; margin-top: 5px; }
+
+.stream-list { margin: 0 0 20px; }
+.stream-list li { margin-bottom: 5px; min-height: 48px; _height: 48px; background: #fafafa; padding: 10px 15px 10px 70px; position: relative; }
+.stream-list li .avatar { position: absolute; top: 10px; left: 10px; }
+.stream-list li .date { display: block; color: #999; }
+.stream-list li a { text-decoration: none; }
+.stream-list li a:hover { text-decoration: underline; }
+
+/* Userfields */
+.userfield-list { width: 450px; }
+.userfield-list li { background: #f7f7f7; margin-bottom: 1px; padding: 10px 5px; overflow: hidden; zoom: 1; line-height: 12px; color: #777; }
+.userfield-list li .uf-actions { float: right; }
+.userfield-list li .uf-actions img { vertical-align: top; }
+.userfield-list li .userfield_admin_name { font-weight: bold; color: #333; }
+
+.userfield-add { text-decoration: none; border-bottom: 1px dashed #70AAE0; }
+.userfield-add:hover { color: #333; border-color: #333; }
+
+
+/* Footer
+----------------------------------------------------------------- */
+#footer .inner { margin:0 auto; width:1000px; padding-top:26px; color:#303030; font-size:13px }
+#footer .inner a { color:#303030; text-decoration:underline }
+#footer .inner a:hover { text-decoration:none }
+#footer .inner .right { float:right }

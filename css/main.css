@@ -1,0 +1,29 @@
+
+html, body { height:100% }
+
+body {
+	font: 12px/18px Tahoma, Arial, Sans-Serif;
+	color: #303030;
+	background: #fff url(../images/bg.gif) repeat-x top;
+}
+
+h1, h2, h3, h4, h5, h6 { font: normal 18px Tahoma, Sans-Serif; line-height: 1.3em; margin-bottom: 0.3em; color: #333; }
+h2 { font-size: 28px; color:#303030; margin-bottom: 10px; }
+h2 span { color: #6EC80D; }
+h3 { font-size: 18px; }
+
+a 			{ color: #448ccb; }
+a:hover 	{ text-decoration: none; }
+
+.inner-light { padding-top:80px; padding-bottom:40px }
+.hFooter { clear:both; height:90px }
+
+a.dashed { text-decoration: none; border-bottom: 1px dashed #70AAE0; }
+
+p { margin-bottom: 18px; }
+
+
+
+
+
+

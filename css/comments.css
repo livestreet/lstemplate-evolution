@@ -1,0 +1,125 @@
+/* Update button */
+.update { 
+	padding:8px 5px 8px 6px;
+	float: right; 
+	position: fixed; 
+	top: 220px; 
+	right: 0; 
+	z-index: 100;
+	text-align: center;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	_position: absolute;
+	_top: expression( eval(document.documentElement.scrollTop) + 220 +"px" ); 
+}
+.update .update-comments { width: 20px; height: 20px; cursor: pointer; background: url(../images/update.gif) no-repeat; }
+.update .update-comments.active { background: url(../images/update_act.gif) no-repeat; }
+.update .new-comments { color: #3cc600; padding-top: 7px; margin-top: 3px; cursor: pointer; }
+
+
+/* Comments */
+.comments { margin-bottom: 10px; }
+.comments .comment-wrapper { overflow: hidden; zoom: 1; position: relative; }
+.comments .comment-wrapper .comment-wrapper { padding-left: 25px; }
+
+.comment-preview { padding: 5px 10px; margin-bottom: 5px; background: #fafafa; overflow: hidden; zoom: 1; }
+.comments-header { margin-bottom: 30px; overflow:hidden; }
+.comments-header h3 { font-size: 20px; color:#333; float:left; margin-right:50px }
+.comments-header h3 span { color:#7e7e7e }
+.comments-header .actions { line-height:24px; margin-top:1px }
+.comments-header .actions .rss { background: url(../images/rss-icon.png) no-repeat; float:left; border-bottom:0px; margin-right: 14px; width:18px; height:18px; display:block }
+.comments-header .actions a { margin-right:11px; color:#366e9e; border-bottom:1px dashed; text-decoration:none }
+.comments-header .actions a:hover { border-bottom:0px }
+
+/* Comment */
+.comment { margin-bottom: 40px; position: relative; overflow:hidden; clear:both; padding-left:24px; zoom: 1; }
+.comment .deleted { padding: 5px 10px; color: #777; background: #f4f4f4; }
+.comment .folding { width: 10px; height: 10px; position: absolute; top: 14px; left: 0px; background: url(../images/icons.gif) -20px -210px no-repeat; cursor: pointer; }
+.comment .folding.folded { background-position: 0 -210px; }
+.comment .goto-comment-child { display: none; }
+
+
+.comment .information, 					    .comment .information:before					{ background-color: #fff }
+.comment.deleted .information, 				.comment.deleted .information:before 			{ background-color: #f0f0f0; padding:9px 10px 13px 10px }
+.comment.deleted .date                                                                      { position:absolute; right:10px; top:9px; color:#999 }
+.comment.deleted.not-admin .information, 	.comment.deleted.not-admin .information:before 	{ background-color: #f7f7f7; padding:9px 10px 13px 10px }
+.comment.deleted.not-admin .date                                                            { position:absolute; right:10px; top:9px; color:#999 }
+.comment.self .information, 				.comment.self .information:before 				{ background-color: #fff3de; padding:9px 10px 13px 10px }
+.comment.self .date                                                                         { position:absolute; right:10px; top:9px; color:#999 }
+.comment.new .information, 					.comment.new .information:before 				{ background-color: #e4fbf1; padding:9px 10px 13px 10px }
+.comment.new.date                                                                           { position:absolute; right:10px; top:9px; color:#999 }
+.comment.current .information, 				.comment.current .information:before 			{ background-color: #ebffda; padding:9px 10px 13px 10px }
+.comment.current .date                                                                      { position:absolute; right:10px; top:9px; color:#999 }
+
+/* Info Block */
+.comment .avatar { position:absolute; top:0px; font-size:12px; width:48px }
+.comment .avatar img { overflow:hidden; }
+.comment .avatar p { text-align:center }
+.comment .avatar .online { color:#5aac00 }
+.comment .avatar .offline { color:#999 }
+
+.comment .information { margin-left:58px; }
+
+.comment .information .info-top { margin-bottom:12px; overflow:hidden; color:#999999; width:100% }
+.comment .information .info-top .username { font-weight:bold; color:#414141; text-decoration:none }
+.comment .information .info-top .username .plus { color:#5aac00 }
+.comment .information .info-top .username .minus { color:#f20202 }
+
+.comment .date { position:absolute; right:0px; top:0px; color:#999 }
+
+.comment .info { overflow: hidden; zoom: 1; font-size: 12px; padding-top:6px; }
+.comment .info li { float: left; margin-right: 10px; }
+.comment .info li a { color:#7f8080; text-decoration:none }
+.comment .info li .reply-link { color:#366e9e; border-bottom:1px dashed }
+.comment .info li .reply-link:hover { border-bottom:0px }
+.comment .info li .delete { color:#366e9e; border-bottom:1px dashed }
+.comment .info li .delete:hover { border-bottom:0px }
+.comment .info li a.comment-link { float: left; width: 10px; height: 12px; background: url(../images/go-to-comment.png) no-repeat; position: relative; top: 5px; }
+.comment .info li a.favourite { float: left; width: 12px; height: 12px; background: url(../images/like-comment.png) no-repeat 0px -12px; position: relative; top: 5px; }
+.comment .info li a.favourite.active { background-position: 0px 0px; }
+.comment .info li a.favourite:hover { background-position: 0px 0px; }
+.comment .info .voting { margin-left:20px }
+.comment .info .voting .total { float: left; padding:1px 4px 0px 4px; color: #aaa; }
+.comment .info .voting .total a { text-decoration: none; color: #999; outline: none; }
+
+.comment .info .voting.positive .total { color: #390; }
+.comment .info .voting.negative .total { color: #f00; }
+
+.comment .info .voting .plus,
+.comment .info .voting .minus 			{ width: 13px; height: 13px; float: left; display: block; background: url(../images/comment-voting.png) no-repeat; position: relative; outline: none; }
+.comment .info .voting .plus 			{ background-position: 0 0; }
+.comment .info .voting .minus 			{ background-position: -13px 0; }
+.comment .info .voting .plus:hover 	{ background-position: 0px -13px }
+.comment .info .voting .minus:hover 	{ background-position: -13px -13px }
+
+.comment .info .voting.voted.plus 	.plus 			{ background-position: 0px -13px }
+.comment .info .voting.voted.minus .minus 			{ background-position: -13px -13px }
+.comment .info .voting.voted.plus 	.minus:hover 	{ background-position: -13px 0; }
+.comment .info .voting.voted.minus .plus:hover 	{ background-position: 0 0; }
+
+.comment .info .voting.guest .plus:hover 	{ background-position: 0 0; }
+.comment .info .voting.guest .minus:hover 	{ background-position: -13px 0; }
+
+/* Content */
+.comment .content { clear:both; overflow:hidden; color:#333 }
+.comment .content .bad-comment { color:#9f9f9f }
+.comment .content .bad-comment:hover { color:#333 }
+.comment pre, .comment-preview pre { overflow: auto; width: 95%; padding: 5px 2%; margin-bottom: 10px; background: #f8f8f8 url(../images/code.gif); border: 1px solid #dce6f0; clear: both; }
+.comment blockquote, .comment-preview blockquote {font-style: italic; padding: 5px 10px; background: #ffffff; border: 1px solid #ddd;}
+
+/* Comment List */
+.comments.comment-list .path { padding-bottom: 3px; font-size: 11px; font-weight: bold; color: #aaa; }
+.comments.comment-list .path .blog-name { color: #999; }
+.comments.comment-list .path .comments-total { color: #78C658; background: url(../images/comment-total.gif) no-repeat 0 4px; padding-left: 10px; margin-left: 10px; font-weight: normal; text-decoration: none; }
+.comments.comment-list .comment { padding-left: 0; }
+
+/* Reply Form */
+.reply-area h4 a { color:#448ccb; border-bottom:1px dashed; text-decoration:none }
+.reply-area h4 a:hover { border-bottom:0px }
+
+.reply { padding-bottom: 10px; padding-top: 10px; }
+.reply .markItUp { width: 100%; }
+.reply .markItUpHeader { width: 100%; }
+.reply textarea { height: 100px; width: 100%; }
+.reply textarea.loader { background: #f7f7f7 url(../images/loader.gif) no-repeat center;}
