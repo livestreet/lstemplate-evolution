@@ -20,8 +20,3 @@
 		{$sStreamComments}
 	</div>
 </div>
-
-{if $sAction=='index'}
-    {include file='block.people.tpl'}
-    {include file='block.top.tpl'}
-{/if}

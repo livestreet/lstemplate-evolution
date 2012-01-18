@@ -17,28 +17,6 @@
 	</ul>
 
 	<div class="block-content">
-		<ul class="list">
-            <li><a href="/" title="login"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-            <li><a href="/"><img src="{cfg name='path.static.skin'}/images/ava.jpg" /></a></li>
-        </ul>
-
-    	<div class="bottom">
-    		<a href="{router page='people'}">{$aLang.block_people_all}</a>
-    	</div>
+		{$evolution_sPeopleTop}
 	</div>
 </div>

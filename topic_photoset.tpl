@@ -129,7 +129,9 @@ jQuery(window).load(function($) {
 			<span class="bg-minus"><a href="#" class="minus" onclick="return ls.vote.vote({$oTopic->getId()},this,-1,'topic');"></a></span>
 		</li>
 
-		<li class="share"><a href="/">{$aLang.topic_share_link}</a></li>
+		{if !$bTopicList}
+			<li class="share"><a href="/">{$aLang.topic_share_link}</a></li>
+		{/if}
 
 		{hook run='topic_show_info' topic=$oTopic}
 	</ul>

@@ -26,6 +26,7 @@ class PluginEvolutiontpl extends Plugin {
 	
 	protected $aInherits=array(
 		'entity' =>array('ModuleBlog_EntityBlog'),
+		'action' =>array('ActionAjax'),
 	);
 
 
@@ -55,6 +56,7 @@ class PluginEvolutiontpl extends Plugin {
 	 */
 	public function Init() {
 		$this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__).'js/evolution.js');
+		//$this->Viewer_AppendScript('http://s7.addthis.com/js/250/addthis_widget.js',array('merge'=>false));
 	}
 }
 ?>
