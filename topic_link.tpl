@@ -61,7 +61,7 @@
 	<ul class="info">
 		<li class="avatar"><a href="{$oUser->getUserWebPath()}"><img src="{$oUser->getProfileAvatarPath(24)}" alt="avatar" title="{$oUser->getLogin()}" /></a></li>
 		<li class="username"><span class="userrating {if $oUser->getRating()<0}minus{else}plus{/if}">{if $oUser->getRating()>0}+{/if}{$oUser->getRating()}</span>&nbsp;&nbsp;<a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a></li>
-        <li class="view">142</li>
+        <li class="view">{$oTopic->getCountRead()}</li>
         {if $bTopicList}
 			<li class="comments-link">
 				{if $oTopic->getCountComment()>0}
@@ -73,7 +73,6 @@
 		{/if}
         <li class="like">
             <a href="#" onclick="return ls.favourite.toggle({$oTopic->getId()},this,'topic');" title="{$aLang.topic_add_favourite}" class="favourite {if $oUserCurrent && $oTopic->getIsFavourite()}active{/if}"></a>
-            1428
         </li>
 
 		<li id="vote_area_topic_{$oTopic->getId()}" class="voting {if $oVote || ($oUserCurrent && $oTopic->getUserId()==$oUserCurrent->getId()) || strtotime($oTopic->getDateAdd())<$smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}{if $oTopic->getRating()>0}positive{elseif $oTopic->getRating()<0}negative{/if}{/if} {if !$oUserCurrent || $oTopic->getUserId()==$oUserCurrent->getId() || strtotime($oTopic->getDateAdd())<$smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}guest{/if}{if $oVote} voted {if $oVote->getDirection()>0}plus{elseif $oVote->getDirection()<0}minus{/if}{/if}">
