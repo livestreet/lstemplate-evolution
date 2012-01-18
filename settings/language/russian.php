@@ -94,6 +94,7 @@ return array(
     'comment_link_to' => 'Ссылка на комментарий',
     'topic_linkto' => 'Топик-ссылка',
     'topic_link_to' => 'Внешняя ссылка',
+    'topic_share_link' => 'Поделиться',
 );
 
 ?>

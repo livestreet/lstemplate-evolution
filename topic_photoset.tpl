@@ -128,6 +128,9 @@ jQuery(window).load(function($) {
 			<span id="vote_total_topic_{$oTopic->getId()}" class="total" title="{$aLang.topic_vote_count}: {$oTopic->getCountVote()}">{if $oTopic->getRating()>0}+{/if}{$oTopic->getRating()}</span>
 			<span class="bg-minus"><a href="#" class="minus" onclick="return ls.vote.vote({$oTopic->getId()},this,-1,'topic');"></a></span>
 		</li>
+
+		<li class="share"><a href="/">{$aLang.topic_share_link}</a></li>
+
 		{hook run='topic_show_info' topic=$oTopic}
 	</ul>
 	{if !$bTopicList}
