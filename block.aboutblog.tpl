@@ -2,7 +2,7 @@
 	{assign var="oBlog" value=$oTopic->getBlog()}
 	{if $oBlog->getType()!='personal'}
 		{assign var="oUserOwner" value=$oBlog->getOwner()}
-        {assign var="oVote" value=$oBlog->getVote()}
+        {assign var="oVote" value=$oBlog->getVoteForce()}
 
 
 		<div class="block about">
@@ -23,7 +23,7 @@
                     </li>
                     {if $oUserCurrent}
                     <li class="rating">
-        				<div id="vote_area_blog_{$oBlog->getId()}" class="voting {if $oBlog->getRating()>=0}positive{else}negative{/if} {if !$oUserCurrent || $oBlog->getOwnerId()==$oUserCurrent->getId()}guest{/if} {if $oVote} voted {if $oVote->getDirection()>0}plus{elseif $oVote->getDirection()<0}minus{/if}{/if}">
+						<div id="vote_area_blog_{$oBlog->getId()}" class="voting {if $oBlog->getRating()>=0}positive{else}negative{/if} {if !$oUserCurrent || $oBlog->getOwnerId()==$oUserCurrent->getId()}guest{/if} {if $oVote} voted {if $oVote->getDirection()>0}plus{elseif $oVote->getDirection()<0}minus{/if}{/if}">
 	                        <span class="bg-plus"><a href="#" class="plus" onclick="return ls.vote.vote({$oTopic->getBlog()->getId()},this,1,'blog');"></a></span>
         					<div id="vote_total_blog_{$oBlog->getId()}" class="total" title="{$aLang.blog_vote_count}: {$oTopic->getBlog()->getCountVote()}">{$oTopic->getBlog()->getRating()}</div>
         					<span class="bg-minus"><a href="#" class="minus" onclick="return ls.vote.vote({$oTopic->getBlog()->getId()},this,-1,'blog');"></a></span>

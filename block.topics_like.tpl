@@ -2,9 +2,9 @@
 		<div class="block like">
             <h2>{$aLang.like_block}</h2>
 
-            <a href="#" class="signin5"></a>
+            <a href="#" class="signin" id="signin-topics-like"></a>
 
-            <div id="signin_menu5">
+            <div class="signin_menu" id="signin-topics-like-text">
                 <div class="top"></div>
                 <div class="center">{$aLang.like_block_textpopup}</div>
             </div>

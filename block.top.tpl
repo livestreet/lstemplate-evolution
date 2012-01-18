@@ -1,9 +1,9 @@
 <div class="block top">
 	<h2>{$aLang.block_top}</h2>
 
-    <a href="#" class="signin4"></a>
+    <a href="#" class="signin" id="signin-top"></a>
 
-    <div id="signin_menu4">
+    <div class="signin_menu" id="signin-top-text">
         <div class="top"></div>
         <div class="center">{$aLang.block_top_textpopup}</div>
     </div>

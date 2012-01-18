@@ -9,29 +9,9 @@
 .block .bottom { padding-top: 5px; font-size: 11px; text-align: right; }
 
 .block .signin { float:right; margin-top:2px; overflow:hidden; width:22px; height:22px; display:block; background:url(../images/question-icon.png) no-repeat }
-.block #signin_menu { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
-.block #signin_menu .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
-.block #signin_menu .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
-
-.block .signin2 { float:right; margin-top:2px; overflow:hidden; width:22px; height:22px; display:block; background:url(../images/question-icon.png) no-repeat }
-.block #signin_menu2 { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
-.block #signin_menu2 .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
-.block #signin_menu2 .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
-
-.block .signin3 { float:right; margin-top:2px; overflow:hidden; width:22px; height:22px; display:block; background:url(../images/question-icon.png) no-repeat }
-.block #signin_menu3 { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
-.block #signin_menu3 .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
-.block #signin_menu3 .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
-
-.block .signin4 { float:right; margin-top:2px; overflow:hidden; width:22px; height:22px; display:block; background:url(../images/question-icon.png) no-repeat }
-.block #signin_menu4 { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
-.block #signin_menu4 .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
-.block #signin_menu4 .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
-
-.block .signin5 { float:right; margin-top:2px; overflow:hidden; width:22px; height:22px; display:block; background:url(../images/question-icon.png) no-repeat }
-.block #signin_menu5 { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
-.block #signin_menu5 .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
-.block #signin_menu5 .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
+.block .signin_menu { font-size:14px; display:none; width:251px; position:absolute; z-index:100; text-align:left; top: 20px; right: 10px; margin-right: 0px; *margin-right: -1px }
+.block .signin_menu .top { width:251px; height:37px; background:url(../images/top-popup.png) no-repeat }
+.block .signin_menu .center { box-shadow:0px 8px 15px #777; width:217px; background:url(../images/center-popup.png) repeat-y; padding:15px 17px; border-bottom:1px solid #59aa00 }
 
 .block .stream-settings-userlist ul,
 .block .stream-settings-friends,

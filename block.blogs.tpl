@@ -1,9 +1,9 @@
 <div class="block blogs" id="block_blogs">
 	<h2>{$aLang.block_blogs}</h2>
 
-    <a href="#" class="signin3"></a>
+    <a href="#" class="signin" id="signin-blogs"></a>
 
-    <div id="signin_menu3">
+    <div class="signin_menu"  id="signin-blogs-text">
         <div class="top"></div>
         <div class="center">{$aLang.block_blogs_textpopup}</div>
     </div>

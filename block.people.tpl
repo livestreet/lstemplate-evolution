@@ -2,9 +2,9 @@
 <div class="block people">
 	<h2>{$aLang.block_people}</h2>
 
-    <a href="#" class="signin2"></a>
+    <a href="#" class="signin" id="signin-people"></a>
 
-    <div id="signin_menu2">
+    <div class="signin_menu" id="signin-people-text">
         <div class="top"></div>
         <div class="center">{$aLang.block_people_textpopup}</div>
     </div>
