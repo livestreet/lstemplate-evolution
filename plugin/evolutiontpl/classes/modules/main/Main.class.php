@@ -54,5 +54,7 @@ class PluginEvolutiontpl_ModuleMain extends Module {
 		return $this->Topic_GetTopicsByFilter($aFilter,$iPage,$iPerPage);
 	}
 
+
+
 }
 ?>

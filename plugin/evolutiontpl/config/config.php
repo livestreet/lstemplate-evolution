@@ -22,6 +22,7 @@
 $config['people_count']=18;
 $config['top_count']=5;
 $config['similar_count']=5;
+$config['stream_count']=10;
 
 $aBlock = array(
 	'path' => array(
@@ -64,10 +65,16 @@ $aBlock = array(
 Config::Set('block.rule_evolution_topic',$aBlock);
 
 $aBlock = array(
-	'action'  => array( 'my' ),
-	'blocks'  => array( 'right' => array('actions/ActionProfile/sidebar.tpl') ),
+	'action'  => array( 'my','profile' ),
+	'blocks'  => array( 'right' => array('userSidebar'=>array('priority'=>100,'params'=>array('plugin'=>'evolutiontpl'))) ),
 );
 Config::Set('block.rule_evolution_profile',$aBlock);
+/**
+ * Убираем стандартный блок в сайдбаре в профиле пользователя
+ */
+$aBlocks=Config::Get('block');
+unset($aBlocks['rule_profile']);
+Config::Set('block',$aBlocks);
 
 return $config;
 ?>
