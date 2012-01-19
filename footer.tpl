@@ -12,15 +12,13 @@
 <div id="footer">
     <div class="inner">
         <div class="right">
-            <a href="/">О проекте</a> •
-            <a href="/">Скачать</a> •
-            <a href="/">Модули</a> •
-            <a href="/">Помощь</a> •
-            <a href="/">Реклама</a>
+            <a href="#">О проекте</a> •
+            <a href="#">Помощь</a>
         </div>
-
-        {hook run='copyright'} • Design by <a href="/">Internetologia</a>
-	{hook run='footer_end'}
+		{hook run='copyright'}
+		
+		• Design by <a href="http://internetologia.ru" target="_blank">Internetologia</a>
+		{hook run='footer_end'}
     </div>
 </div>
 
