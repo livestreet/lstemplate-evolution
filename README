@@ -1,0 +1,10 @@
+Шаблон Evolution
+Версия 1.0.0
+
+Установка шаблона evolution
+1. ОБЯЗАТЕЛЬНО сначала установить и активировать плагин evolutiontpl из каталога /plugin/
+2. скопировать шаблон из каталога /template/ в /templates/skin/ и прописать его в конфиге /config/config.local.php:
+	$config['view']['skin'] = 'evolution';
+
+
+Настройки шаблона находятся в конфиге плагина: /plugins/evolutiontpl/config/config.php

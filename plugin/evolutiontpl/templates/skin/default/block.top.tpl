@@ -15,10 +15,6 @@
 	</ul>
 
 	<div class="block-content" id="block_top_content">
-		<ul class="list">
-			<li><a href="/">Дизайн темы Lugree</a><span class="comments"><a href="/">136</a> +33</span></li>
-			<li><a href="/">Web-версия списка файлов шаблонов</a><span class="comments"><a href="/">2</a> +1</span></li>
-			<li><a href="/">Плагин Vkfeed 1.0</a><span class="comments"><a href="/">21</a> +11</span></li>
-		</ul>
+		{$evolution_sTopWeek}
 	</div>
 </div>

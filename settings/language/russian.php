@@ -30,24 +30,23 @@ return array(
 	'about_blog_noreaders' => 'Нет читателей',
 
 	'like_block' => 'Строго по теме',
-	'like_block_textpopup' => 'Какая-то информация о Похожих публикациях.',
+	'like_block_textpopup' => 'Быстрый доступ к похожим публикациям',
 	'like_block_more' => 'Ещё из блога',
 	'like_block_like' => 'Похожее',
 
 	'block_blogs' => 'Топ блогов',
-	'block_blogs_textpopup' => 'Какая-то информация в Топе блогов в данное блоге.',
+	'block_blogs_textpopup' => 'Рейтинг коллективный блогов и список ваших блогов',
 
-	'block_stream_lenta' => 'Лента',
-	'block_stream_textpopup' => 'Какая-то информация о Прямом эфире и его вкладках.',
+	'block_stream_textpopup' => 'Блок "Прямой эфир" поможет держать руку на пульсе активности сайта',
 
 	'block_top' => 'Популярное',
-	'block_top_textpopup' => 'Какая-то информация о Топе публикаций.',
+	'block_top_textpopup' => 'Самые популярные материалы сайта за последнее время',
 	'block_top_week' => 'За 7 дней',
 	'block_top_month' => 'За 30 дней',
 	'block_top_all' => 'За все время',
 
 	'block_people' => 'Люди',
-	'block_people_textpopup' => 'Какая-то информация о Людях в данном блоке.',
+	'block_people_textpopup' => 'Лидеры сайта',
 	'block_people_top' => 'Топ',
 	'block_people_online' => 'Онлайн',
 	'block_people_new' => 'Новые',

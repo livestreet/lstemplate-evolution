@@ -26,6 +26,7 @@ class PluginEvolutiontpl extends Plugin {
 	
 	protected $aInherits=array(
 		'entity' =>array('ModuleBlog_EntityBlog'),
+		'mapper' =>array('ModuleTopic_MapperTopic'),
 		'action' =>array('ActionAjax'),
 	);
 

@@ -32,6 +32,9 @@ class PluginEvolutiontpl_ActionAjax extends PluginEvolutiontpl_Inherit_ActionAja
 		$this->AddEventPreg('/^top/i','/^week/','EventTopWeek');
 		$this->AddEventPreg('/^top/i','/^month/','EventTopMonth');
 		$this->AddEventPreg('/^top/i','/^all/','EventTopAll');
+
+		$this->AddEventPreg('/^similar/i','/^more/','EventSimilarMore');
+		$this->AddEventPreg('/^similar/i','/^like/','EventSimilarLike');
 	}
 
 	public function EventPeopleTop() {
@@ -106,6 +109,43 @@ class PluginEvolutiontpl_ActionAjax extends PluginEvolutiontpl_Inherit_ActionAja
 			$oViewer=$this->Viewer_GetLocalViewer();
 			$oViewer->Assign('aTopics',$aTopics);
 			$sTextResult=$oViewer->Fetch(Plugin::GetTemplatePath(__CLASS__)."block.top_items.tpl");
+			$this->Viewer_AssignAjax('sText',$sTextResult);
+		}
+	}
+
+
+	public function EventSimilarLike() {
+		$iTopicId=getRequest('iTopicIdForSimilar');
+		if (!($oTopic=$this->Topic_GetTopicById($iTopicId))) {
+			return;
+		}
+
+		$sTags=$oTopic->getTags();
+		$aTags=explode(',',$sTags);
+		$aTags=array_map('trim',$aTags);
+
+		$aTopics=$this->PluginEvolutiontpl_Main_GetTopicsByTag($aTags,array($oTopic->getId()),Config::Get('plugin.evolutiontpl.similar_count'));
+		if ($aTopics) {
+			$oViewer=$this->Viewer_GetLocalViewer();
+			$oViewer->Assign('aTopics',$aTopics);
+			$sTextResult=$oViewer->Fetch(Plugin::GetTemplatePath(__CLASS__)."block.similar_items.tpl");
+			$this->Viewer_AssignAjax('sText',$sTextResult);
+		}
+	}
+
+	public function EventSimilarMore() {
+		$iTopicId=getRequest('iTopicIdForSimilar');
+		if (!($oTopic=$this->Topic_GetTopicById($iTopicId))) {
+			return;
+		}
+
+		$aResult=$this->PluginEvolutiontpl_Main_GetTopicsByBlogId($oTopic->getBlogId(),array($oTopic->getId()),1,Config::Get('plugin.evolutiontpl.similar_count'));
+
+		$aTopics=$aResult['collection'];
+		if ($aTopics) {
+			$oViewer=$this->Viewer_GetLocalViewer();
+			$oViewer->Assign('aTopics',$aTopics);
+			$sTextResult=$oViewer->Fetch(Plugin::GetTemplatePath(__CLASS__)."block.similar_items.tpl");
 			$this->Viewer_AssignAjax('sText',$sTextResult);
 		}
 	}

@@ -66,6 +66,9 @@ ls.plugin.evolution = (function ($) {
 		ls.blocks.options.type.block_top_item_month = { url: aRouter['ajax']+'top/month/' };
 		ls.blocks.options.type.block_top_item_all = { url: aRouter['ajax']+'top/all/' };
 
+		ls.blocks.options.type.block_similar_item_more = { url: aRouter['ajax']+'similar/more/' };
+		ls.blocks.options.type.block_similar_item_like = { url: aRouter['ajax']+'similar/like/' };
+
 		$('[id^="block_people_item"]').click(function(){
 			ls.blocks.load(this, 'block_people');
 			return false;
@@ -73,6 +76,11 @@ ls.plugin.evolution = (function ($) {
 
 		$('[id^="block_top_item"]').click(function(){
 			ls.blocks.load(this, 'block_top');
+			return false;
+		});
+
+		$('[id^="block_similar_item"]').click(function(){
+			ls.blocks.load(this, 'block_similar', {iTopicIdForSimilar: (window.iTopicIdForSimilar === undefined) ? 0 : iTopicIdForSimilar});
 			return false;
 		});
 	}

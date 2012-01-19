@@ -1,9 +1,4 @@
 <div id="sidebar">
-
-    {include file='block.aboutblog.tpl'}
-    
-    {include file='block.topics_like.tpl'}
-
 	{if isset($aBlocks.right)}
 		{foreach from=$aBlocks.right item=aBlock}
 			{if $aBlock.type=='block'}

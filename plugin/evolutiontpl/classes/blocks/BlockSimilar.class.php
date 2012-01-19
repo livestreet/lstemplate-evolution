@@ -16,16 +16,9 @@
 */
 
 
-class PluginEvolutiontpl_BlockTop extends Block {
+class PluginEvolutiontpl_BlockSimilar extends Block {
 	public function Exec() {
-		$sDate=date("Y-m-d H:00:00",time()-60*60*24*7);
-		$aTopics=$this->Topic_GetTopicsRatingByDate($sDate,Config::Get('plugin.evolutiontpl.top_count'));
-		if ($aTopics) {
-			$oViewer=$this->Viewer_GetLocalViewer();
-			$oViewer->Assign('aTopics',$aTopics);
-			$sTextResult=$oViewer->Fetch(Plugin::GetTemplatePath(__CLASS__)."block.top_items.tpl");
-			$this->Viewer_Assign('evolution_sTopWeek',$sTextResult);
-		}
+
 	}
 }
 ?>

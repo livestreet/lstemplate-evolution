@@ -8,7 +8,7 @@
 		<div class="block about">
             <h2>{$aLang.about_blog}</h2>
 
-            <div class="block-content" id="block_blogs_content">
+            <div class="block-content" id="block_blogsrr_content">
         		<ul class="list">
                     <li class="title">{$aLang.about_blog_title}: <a href="{$oBlog->getUrlFull()}">{$oTopic->getBlog()->getTitle()|escape:'html'}</a><a href="{router page='rss'}blog/{$oBlog->getUrl()}/" class="rss" title="RSS"></a></li>
 
