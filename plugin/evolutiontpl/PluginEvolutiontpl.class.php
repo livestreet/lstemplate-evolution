@@ -58,7 +58,7 @@ class PluginEvolutiontpl extends Plugin {
 	 */
 	public function Init() {
 		$this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__).'js/evolution.js');
-		//$this->Viewer_AppendScript('http://s7.addthis.com/js/250/addthis_widget.js',array('merge'=>false));
+		$this->Viewer_AppendScript('http://s7.addthis.com/js/250/addthis_widget.js',array('merge'=>false));
 	}
 }
 ?>
