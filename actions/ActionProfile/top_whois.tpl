@@ -53,4 +53,5 @@
     <li {if $sAction=='profile' and ($aParams[0]=='favourites' and ($aParams[1]=='' or $aParams[1]=='comments'))}class="active"{/if}><a href="{router page='profile'}{$oUserProfile->getLogin()}/favourites/">{$aLang.profile_favourite}</a><span></span></li>
     <li {if $sAction=='my' and ($aParams[0]=='blog' or $aParams[0]=='')}class="active"{/if}><a href="{router page='my'}{$oUserProfile->getLogin()}/">{$aLang.profile_topics}{if $iCountTopicUser} ({$iCountTopicUser}){/if}</a><span></span></li>
     <li {if $sAction=='my' and $aParams[0]=='comment'}class="active"{/if}><a href="{router page='my'}{$oUserProfile->getLogin()}/comment/">{$aLang.user_menu_publication_comment}{if $iCountCommentUser} ({$iCountCommentUser}){/if}</a><span></span></li>
+	{hook run='menu_profile_profile_item'}
 </ul>

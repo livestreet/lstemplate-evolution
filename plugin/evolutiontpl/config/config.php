@@ -23,7 +23,7 @@ $config['people_count']=18;
 $config['top_count']=5;
 $config['similar_count']=5;
 
-$aBlockBlog = array(
+$aBlock = array(
 	'path' => array(
 		'___path.root.web___/blog$',
 		'___path.root.web___/blog/*$',
@@ -43,12 +43,12 @@ $aBlockBlog = array(
 	),
 	'clear' => false,
 );
-Config::Set('block.rule_evolution_blob',$aBlockBlog);
+Config::Set('block.rule_evolution_blob',$aBlock);
 
 /**
  * Блоки на странице топика
  */
-$aBlockBlog = array(
+$aBlock = array(
 	'path' => array(
 		'___path.root.web___/blog/*/*\.html$',
 		'___path.root.web___/blog/*\.html$',
@@ -61,7 +61,13 @@ $aBlockBlog = array(
 	),
 	'clear' => false,
 );
-Config::Set('block.rule_evolution_topic',$aBlockBlog);
+Config::Set('block.rule_evolution_topic',$aBlock);
+
+$aBlock = array(
+	'action'  => array( 'my' ),
+	'blocks'  => array( 'right' => array('actions/ActionProfile/sidebar.tpl') ),
+);
+Config::Set('block.rule_evolution_profile',$aBlock);
 
 return $config;
 ?>
