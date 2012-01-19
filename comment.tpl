@@ -9,7 +9,7 @@
 
     <div class="avatar">
         <a href="{$oUser->getUserWebPath()}"><img src="{$oUser->getProfileAvatarPath(48)}" alt="avatar" title="{$oUser->getLogin()}" /></a>
-        <p class="online">{$aLang.comment_online_user}</p>
+        <p class="online"></p>
     </div>
 
 <div id="comment_information_id_{$oComment->getId()}" class="information">
