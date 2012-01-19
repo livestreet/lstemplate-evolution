@@ -16,7 +16,7 @@
             <a href="#">Помощь</a>
         </div>
 		{hook run='copyright'}
-		
+
 		• Design by <a href="http://internetologia.ru" target="_blank">Internetologia</a>
 		{hook run='footer_end'}
     </div>

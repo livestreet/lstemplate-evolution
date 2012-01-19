@@ -8,7 +8,7 @@
 {/if}
 
 <div class="comments-header">
-	<h3>{$aLang.comment_title} <span id="count-comments">({$iCountComment})</span></h3>
+	<h3>{$aLang.comment_title} (<span id="count-comments">{$iCountComment}</span>)</h3>
     <div class="actions">
     	{if $sTargetType=='topic'}
     	    <a href="{router page='rss'}comments/{$iTargetId}/" class="rss"></a>
